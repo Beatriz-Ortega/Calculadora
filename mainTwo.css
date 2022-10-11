@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Lobster&display=swap");
+
+body {
+  background-color: hsl(0, 0%, 90%);
+  max-width: 1440px;
+  min-width: 375px;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  align-items: center;
+  height: 2rem;
+  width: 100%;
+}
+
+header h2 {
+  padding-top: 0.2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 2rem;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#theme {
+  width: 6rem;
+  height: 1.2rem;
+  background-color: hsl(0, 6%, 82%);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#selector {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.numberTheme {
+  font-size: 1rem;
+}
+
+#circle {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: hsl(27, 94%, 38%);
+}
+
+#circle:hover {
+  background-color: hsl(25, 93%, 60%);
+}
+
+h6 {
+  margin: 0;
+  text-align: center;
+}
+#result {
+  margin: auto;
+  margin-top: 2rem;
+  width: 30rem;
+  height: 5rem;
+  background-color: hsl(0, 0%, 93%);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.4rem;
+}
+
+#result div {
+  font-size: 2rem;
+}
+
+#operator {
+  background-color: hsl(0, 6%, 82%);
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 26rem;
+  display: grid;
+  grid-template-columns: 5rem 5rem 5rem 5rem;
+  grid-template-rows: auto 2.5rem;
+  border-radius: 1rem;
+}
+
+button {
+  height: 3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 1px 8px 5px -2px #a79e90;
+  color: hsl(60, 11%, 15%);
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.number {
+  background-color: hsl(48, 9%, 89%);
+}
+
+#del {
+  color: white;
+  background-color: hsl(184, 41%, 37%);
+}
+
+.number:hover,
+#sum:hover,
+#minus:hover,
+#decimal:hover,
+#divide:hover,
+#multiply:hover,
+#reset:hover,
+#equal:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+#operatorBottom {
+  display: flex;
+  justify-content: center;
+  width: 26rem;
+}
+
+#reset,
+#equal {
+  padding: 0;
+  margin: auto;
+  height: 3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 2rem;
+  width: 10rem;
+  box-shadow: 1px 8px 5px -2px #a79e90;
+  color: hsl(60, 11%, 15%);
+  color: white;
+}
+
+#reset {
+  background-color: hsl(184, 41%, 37%);
+}
+
+#equal {
+  background-color: hsl(25, 99%, 39%);
+}
+
+#delete:hover,
+#reset:hover {
+  background-color: hsl(185, 41%, 56%);
+}
+
+#equal:hover {
+  background-color: hsl(25, 100%, 61%);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#displayActual {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    gap: 5rem;
+  }
+
+  h6 {
+    margin: 0;
+    text-align: center;
+  }
+
+  #result {
+    width: 80%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  #operator {
+    width: 18rem;
+    display: grid;
+    grid-template-columns: 3rem 3rem 3rem 3rem;
+    grid-template-rows: auto 3rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  #operatorBottom {
+    display: flex;
+    justify-content: start;
+  }
+
+  #reset,
+  #equal {
+    padding: 0;
+    margin: 0;
+    height: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 2rem;
+    width: 8rem;
+  }
+
+  .attribution {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+}
